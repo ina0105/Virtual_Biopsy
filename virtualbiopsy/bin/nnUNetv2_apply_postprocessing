@@ -1,0 +1,6 @@
+#!/home/iklaric1/venvs/nnunet-adc-pet/bin/python3
+import sys
+from nnunetv2.postprocessing.remove_connected_components import entry_point_apply_postprocessing
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(entry_point_apply_postprocessing())

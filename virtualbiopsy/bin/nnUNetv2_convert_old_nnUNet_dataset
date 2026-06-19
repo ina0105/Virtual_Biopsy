@@ -1,0 +1,6 @@
+#!/home/iklaric1/venvs/nnunet-adc-pet/bin/python3
+import sys
+from nnunetv2.dataset_conversion.convert_raw_dataset_from_old_nnunet_format import convert_entry_point
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(convert_entry_point())

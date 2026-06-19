@@ -1,0 +1,6 @@
+#!/home/iklaric1/venvs/nnunet-adc-pet/bin/python3
+import sys
+from nnunetv2.dataset_conversion.convert_MSD_dataset import entry_point
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(entry_point())

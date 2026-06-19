@@ -1,0 +1,6 @@
+#!/home/iklaric1/venvs/nnunet-adc-pet/bin/python3
+import sys
+from nnunet.inference.pretrained_models.download_pretrained_model import download_by_name
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(download_by_name())

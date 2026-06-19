@@ -1,0 +1,6 @@
+#!/home/iklaric1/venvs/nnunet-adc-pet/bin/python3
+import sys
+from nnunetv2.utilities.overlay_plots import entry_point_generate_overlay
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(entry_point_generate_overlay())
